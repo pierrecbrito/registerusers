@@ -14,4 +14,8 @@ public class UserRepository {
     public static List<User> findAll() {
         return users;
     }
+
+    public static boolean existsByEmail(String email) {
+        return users.stream().anyMatch(user -> user.getEmail().equalsIgnoreCase(email));
+    }
 }
