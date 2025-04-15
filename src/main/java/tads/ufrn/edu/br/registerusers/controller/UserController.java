@@ -84,7 +84,7 @@ public class UserController {
         out.println("<html><head><title>Dashboard</title></head><body>");
         out.println("<h2>Welcome, " + user.getName() + "!</h2>");
         out.println("<p>Your email: " + user.getEmail() + "</p>");
-        out.println("<a href='/users'>See all users</a>");
+        out.println("<a href='/users'>See all users</a><br>");
         out.println("<a href='/cadastro'>Back</a>");
         out.println("</body></html>");
     }

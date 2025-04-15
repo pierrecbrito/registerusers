@@ -20,9 +20,9 @@ public class AuthFilter implements Filter {
         boolean isAuthenticated = session != null && session.getAttribute("user") != null;
 
         if (isAuthenticated) {
-            chain.doFilter(req, res); // usuário autenticado → continua
+            chain.doFilter(req, res);
         } else {
-            response.sendRedirect("/cadastro"); // não autenticado → redireciona
+            response.sendRedirect("/cadastro");
         }
     }
 }
